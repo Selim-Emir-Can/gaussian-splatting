@@ -1,0 +1,17 @@
+name: gaussian_splatting
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - cudatoolkit=11.8
+  - plyfile=0.8.1
+  - python=3.11.8
+  - pip=22.3.1
+  - pytorch=2.2.1+cu118
+  - torchaudio=2.2.1+cu118
+  - torchvision=0.17.1+cu118
+  - tqdm
+  - pip:
+    - submodules/diff-gaussian-rasterization
+    - submodules/simple-knn
